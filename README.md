@@ -1,3 +1,8 @@
+
+I made some assumptions 
+1- no Api app requested so i worked with normal views
+2- no required styling for views so i made it very basic
+
 Prerequisites
     Git
     Ruby (version 3.2.2 )
