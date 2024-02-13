@@ -19,6 +19,6 @@ class MoviesController < ApplicationController
       flash[:error] = 'Please select both movies and reviews CSV files to import.'
     end
 
-    redirect_to root_path
+    redirect_to movies_path
   end
 end
