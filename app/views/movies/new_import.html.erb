@@ -1,0 +1,15 @@
+<h1>Data Import</h1>
+
+<%= form_tag(perform_import_movies_path, multipart: true) do %>
+  <div>
+    <label for="movies_csv">Movies CSV:</label>
+    <%= file_field_tag :movies_csv %>
+  </div>
+
+  <div>
+    <label for="reviews_csv">Reviews CSV:</label>
+    <%= file_field_tag :reviews_csv %>
+  </div>
+
+  <%= submit_tag 'Import' %>
+<% end %>

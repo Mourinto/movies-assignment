@@ -1,0 +1,8 @@
+<h1>All Actors</h1>
+
+<%= form_tag(search_actors_path, method: :get) do %>
+  <%= text_field_tag :query %>
+  <%= submit_tag "Search Actor" %>
+<% end %>
+
+<%= render partial: 'actors_list', locals: { actors: @actors } %>

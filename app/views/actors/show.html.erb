@@ -1,0 +1,12 @@
+<h1><%= @actor.name %></h1>
+
+<h2>Movies:</h2>
+<% if @movies.any? %>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><%= movie.title %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No movies found for this actor.</p>
+<% end %>
