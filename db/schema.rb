@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_13_162818) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_13_212216) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,6 +42,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_13_162818) do
     t.datetime "updated_at", null: false
     t.float "average_rating", default: 0.0
     t.integer "review_count", default: 0
+    t.index ["average_rating"], name: "index_movies_on_average_rating"
     t.index ["title"], name: "index_movies_on_title", unique: true
   end
 
