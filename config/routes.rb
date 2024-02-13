@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "movies#index"
+  root "movies#new_import"
   resources :actors, only: [:index, :show] do
     collection do
       get :search
